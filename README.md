@@ -1,12 +1,12 @@
 The impact of bias in datasets on fairness of models predictions is a subject of ongoing research across multiple domains. In this study we systematically examine the diagnosis accuracy of different CNN architectures, using skin lesions images as input, focusing on variations of demographic parameters, particularly sex, in the training data. More specially, we used a balanced test set, and constructed five equally sized train sets where female-male ratio varied (only female; 75:25; 50:50; 25:75; only male). The ratio benign-malignant was 50:50 for all six datasets. We evaluated the model performance for three different learning strategies – a single task model, a multi-task model, and an adversarial learning scheme. We observe that: 1) single task models reveal sex bias, 2) multi-task models eliminate sex bias from balanced or female-skewed data, 3) adversarial approach eliminates sex bias for the female-only case, and 4) male-inclusive datasets enhance model performance for males despite female majority.
 It is hard to generalize from these findings. Future research is planned to look at more demographic attributes, like age, and other possibly confounding factors such as skin color and artefacts (e.g. markings) in the images.
-
+---
 Here is a description of the repository structure and files:
 
 0_data: contains the metadata of the collected skin-lesions (from the ISIC archive [1,2,3,4,5,6])
 1_code: contains the baseline and multi-task models.
 
-
+---
 
 [1] Codella, N., Rotemberg, V., Tschandl, P., Celebi, M.E., Dusza, S., Gutman, D.,
 Helba, B., Kalloo, A., Liopyris, K., Marchetti, M., Kittler, H., Halpern, A.: Skin
