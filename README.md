@@ -4,6 +4,7 @@ The impact of bias in datasets on fairness of models predictions is a subject of
 Here is a description of the repository structure and files:
 
 0_data: contains the metadata of the collected skin-lesions (from the ISIC archive [1,2,3,4,5,6])
+
 1_code: contains the baseline and multi-task models, and the definition of the experiments:
 - single taks: 0_baseline.py (Keras and TensorFlow)
 - reinforcing: 1_mtl_strengthen.py (Keras and TensorFlow)
